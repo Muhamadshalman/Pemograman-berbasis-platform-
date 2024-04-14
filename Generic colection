@@ -1,8 +1,3 @@
-# GENERIC-COLLECTION
-
-Untuk pertanyaan pertama, kita perlu membuat kelas `Mahasiswa` sebagai kelas generik. Berikut adalah implementasinya:
-
-```java
 public class Mahasiswaku {
 
     public static void main(String[] args) {
@@ -51,40 +46,3 @@ class Mahasiswa<N, S, C> {
 }
 
 
-
-```
-
-Untuk pertanyaan kedua, berikut adalah program menggunakan `ArrayList` dan `ArrayDeque`:
-
-```java
-import java.util.ArrayList;
-import java.util.ArrayDeque;
-
-public class Main {
-    public static void main(String[] args) {
-        // Contoh penggunaan ArrayList
-        ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("Item 1");
-        arrayList.add("Item 2");
-        arrayList.add("Item 3");
-
-        System.out.println("Isi ArrayList:");
-        for (String item : arrayList) {
-            System.out.println(item);
-        }
-
-        // Contoh penggunaan ArrayDeque
-        ArrayDeque<Integer> arrayDeque = new ArrayDeque<>();
-        arrayDeque.addFirst(1);
-        arrayDeque.addLast(2);
-        arrayDeque.addLast(3);
-
-        System.out.println("\nIsi ArrayDeque:");
-        for (int item : arrayDeque) {
-            System.out.println(item);
-        }
-    }
-}
-```
-
-Dalam contoh yang diatas, kita menggunakan `ArrayList` untuk menyimpan objek-objek bertipe `String`, dan `ArrayDeque` untuk menyimpan objek-objek bertipe `Integer`. Kedua kelas tersebut adalah implementasi dari antarmuka `List` dan `Deque` di dalam Java Collections Framework.
